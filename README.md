@@ -18,45 +18,81 @@ Joker-Eye is a simple and efficient network scanning tool written in Python. It 
 - Python 3.x
 - Internet connectivity for accessing target hosts
 
-## Installation
+# Joker Eye Port Scanner (by Kalki-Dev)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/Joker-Eye-Scanner.git
-   ```
+![Joker Eye(https://i.ibb.co/bRVPNbV/IMG-20230726-215243.jpg)]
 
-2. Change to the project directory:
-   ```bash
-   cd Joker-Eye-Scanner
-   ```
 
-3. Install the required dependencies:
-   ```bash
-   pip install .
-   ```
+
+## Introduction
+Joker Eye Port Scanner is a command-line tool designed to scan for open or closed ports on a target host. It provides various scanning options and displays the results for each scanned port.
+
+## Features
+- Fast and efficient port scanning
+- Multiple scanning options:
+  - Scan all ports (1 to 1024)
+  - Scan all ports (1 to 65000)
+  - Scan an individual port
+  - Scan a range of ports (start value to end value)
+- Colorful and visually appealing user interface
+
+## Requirements
+- Python 3.x
+- `colorama` library (You can install it using `pip install colorama`)
 
 ## Usage
+1. Clone the repository or download the `joker_eye.py` file.
+2. Open a terminal or command prompt.
+3. Navigate to the directory where `joker_eye.py` is located.
+4. Run the script using the command: `python joker_eye.py`
 
-Run the `joker-eye` command followed by the target host and optional port numbers to scan specific ports:
+## Instructions
+1. When the tool starts, it will display the Joker Eye banner.
+2. Enter the target host's IP address or domain name.
+3. Choose a scanning option from the menu:
+   - `1`: Scan all ports from 1 to 1024.
+   - `2`: Scan all ports from 1 to 65000.
+   - `3`: Scan an individual port of your choice.
+   - `4`: Scan a range of ports (start value to end value).
+   - `exit`: To close the script and exit the tool.
+4. The tool will display the scan results for each port on the target host.
+5. To exit the tool, select the `exit` option.
 
-```bash
-joker-eye <host> [port1 port2 ...]
+## Example
 ```
+$ python joker_eye.py
 
-If no port numbers are provided, the tool will scan ports 1 to 1024 by default.
+================ JOKER EYE PORT SCANNER =================
 
-## License
+Enter the target host: 127.0.0.1
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+1. Scan all ports (1 to 1024)
+2. Scan all ports (1 to 65000)
+3. Scan an individual port
+4. Scan a range of ports (start value to end value)
+exit. Exit the script
+
+Enter the option number or 'exit' to close: 1
+
+Scanning ports...
+
+Port 80 is open
+Port 443 is closed
+Port 8080 is closed
+...
+
+================ Scanning completed in 2.34 seconds =================
+
+Enter the option number or 'exit' to close: exit
+
+Closing the script... Goodbye!
+```
 
 ## Disclaimer
+This tool is intended for educational purposes only. The authors, contributors, and maintainers of this tool are not responsible for any unauthorized use, misuse, or damage caused by this tool. Use at your own risk.
 
-Use this tool responsibly and only on networks you own or have explicit permission to scan. Unauthorized scanning of networks or systems may be illegal and can result in serious consequences.
+## Credits
+This tool was created by Kalki-Dev. You can find more projects and information on GitHub: [https://github.com/Kalki-Dev](https://github.com/Kalki-Dev)
 
-## Contributions
-
-Contributions are welcome! If you find any issues or want to improve the tool, feel free to submit a pull request.
-
-Happy scanning!
-```
-
+## License
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
